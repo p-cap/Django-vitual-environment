@@ -2,7 +2,7 @@
 Created a bash script that automates the creation of a python virtual environment and Django project creation
 
 ## How to use
-- clone this repo
+- clone this repo => ```git clone https://github.com/p-cap/Django-vitual-environment.git```
 - change the permissions on both:
   ```chmod 700 virtual_env```
   ```chmod 700 start_django```
