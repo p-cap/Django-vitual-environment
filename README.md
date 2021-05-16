@@ -6,7 +6,7 @@ Created a bash script that automates the creation of a python virtual environmen
 - change the permissions on both:
   ```chmod 700 virtual_env```
   ```chmod 700 start_django```
-- Run ```./virtual_env``` first and follow the prompt  
+- Run ```./virtual_env``` first then....follow the prompt  
      NOTE: Make sure to pay attention to the logs displyed while running the script
 - Copy paste the command indicated after running the ```./virtual_env```
 - Then, run ```start_django``` and follow the prompt as well  
