@@ -1,4 +1,4 @@
-# Django-vitual-environment
+# Django-vitual-environment with Python3
 Created a bash script that automates the creation of a python virtual environment and Django project creation
 
 ## How to use
