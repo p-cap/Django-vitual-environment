@@ -7,7 +7,7 @@ python3 -m pip install Django
 
 # Verify if Django is installed
 echo -e "Django Verion: "
-python -m django --version
+python3 -m django --version
 
 # Create a new django project
 echo -e "\nEnter name of Django project: "
