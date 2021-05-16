@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+echo -e "\nInstalling Django....\n"
+ 
+# Install django inside virtual environment
+python3 -m pip install Django
+
+# Verify if Django is installed
+echo -e "Django Verion: "
+python -m django --version
+
+# Create a new django project
+echo -e "\nEnter name of Django project: "
+read dproject
+django-admin startproject $dproject
+
+# cd into the project
+cd $dproject
+
+echo -e "\nHappy Django coding!!!"

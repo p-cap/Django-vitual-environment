@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+echo -e "\nPlease enter the name of your virtual environment project: "
+
+# ask for user input
+read project_name
+
+# command to create directory
+mkdir $project_name
+
+output=$(ls -d $project_name)
+
+# check if it was successfully created
+if [ $output == $project_name ]
+then
+ echo -e "\n++++++++++STATUS++++++++++++" 
+ echo "Project $project_name successfully created!!!"
+ echo "Entering Project => $project_name....."
+ cd $project_name 
+ 
+ echo -e "\nName of the virtual environment directory: "
+ read virtual
+ echo -e "\n++++++++++STATUS++++++++++++" 
+ echo -e "Building the virtual environment....."
+ 
+ # created the virtual environment directory
+ python3 -m venv $virtual
+ echo -e "\nVirtual Environment Created!!!"
+ echo -e "\n**** THE COMMANDS BELOW DOES TWO THINGS..please COPY/PASTE into terminal: ****"
+ echo "1> It activates your python virtual environment"
+ echo "2> It installs Django and assists in creating your project"
+ echo "COMMAND:"
+ echo -e "cd $project_name && source $virtual/bin/activate && ../start_django" 
+ echo -e "\nREMINDER: to deactivate from your virtual environment, use: "
+ echo -e "deactivate\n"
+fi
+
